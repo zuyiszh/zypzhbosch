@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: zuyiszhzypzhbosch 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zuyiszhzypzhbosch
+  template:
+    metadata:
+      labels:
+        app: zuyiszhzypzhbosch 
+    spec:
+      containers:
+        - name: zuyiszhzypzhbosch 
+          image: zypregistry.azurecr.io/zuyiszhzypzhbosch
+          ports:
+          - containerPort: 80
